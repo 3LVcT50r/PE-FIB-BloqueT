@@ -1,0 +1,14 @@
+#! /bin/bash
+
+make
+
+time ./SUPERMEGAGENERADORDEVECTORES <intput.in >output.out
+echo GENRADOR ACABADO
+
+#time ./CALCULADORADESORDEN <output.out >desorden.out
+#echo CALC DESORDEN ACABADO
+
+time ./CALCULADOREPICODETIEMPO <intput.in output.out >time.out
+echo CALC TIEMPO ACABADO
+
+exit
